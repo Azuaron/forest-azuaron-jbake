@@ -1,0 +1,23 @@
+buildscript {
+  repositories {
+      mavenCentral()
+      jcenter()
+  }
+
+  dependencies {
+    classpath 'org.ajoberstar:gradle-git:1.3.2'     
+  }
+}
+
+apply plugin: 'org.ajoberstar.github-pages'
+
+githubPages {
+  repoUri = 'https://github.com/Azuaron/azuaron.github.io.git'      
+  pages {
+     from(file('build/jbake')) {
+     	into '.'                                    
+     }
+  }
+  commitMessage = cm
+  targetBranch = 'master'
+}

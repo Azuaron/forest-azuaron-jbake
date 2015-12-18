@@ -1,0 +1,22 @@
+buildscript {
+  repositories {
+      mavenLocal() // needed to use the local JBake 2.3.0 build
+      jcenter()
+  }
+
+  dependencies {
+    classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+  }
+}
+
+apply plugin: 'me.champeau.jbake'
+
+jbake {
+  version = '2.4.0'
+}
+
+task publish(type: GradleBuild) {
+  buildFile = 'publish.gradle'
+  tasks = ['publishGhPages']
+  startParameter.projectProperties = project.getGradle().getStartParameter().getProjectProperties()
+}
