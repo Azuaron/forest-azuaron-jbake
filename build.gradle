@@ -1,11 +1,15 @@
 buildscript {
   repositories {
-      mavenLocal() // needed to use the local JBake 2.3.0 build
+      
+	  mavenCentral()
       jcenter()
   }
 
   dependencies {
     classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+	classpath 'org.jbake:jbake-core:2.4.0'
+	classpath 'org.pegdown:pegdown:1.6.0'
+	classpath 'org.thymeleaf:thymeleaf:2.1.4.RELEASE'
   }
 }
 
