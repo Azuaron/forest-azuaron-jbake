@@ -1,0 +1,26 @@
+buildscript {
+  repositories {
+      mavenCentral()
+      mavenLocal()
+      jcenter()
+  }
+
+  dependencies {
+     classpath 'com.forestazuaron:wp2jbake:1.0-SNAPSHOT'
+  }
+}
+
+apply plugin: 'com.forestazuaron.wp2jbake'
+
+wp2jbakeprops {
+	fileLoc = '../forestazuaron.wordpress.2016-07-10.xml'
+	jbakeImagesLoc = 'C:/dev/forest-azuaron-jbake/src/jbake/assets/images'
+	jbakeImagesLink = 'http://azuaron.github.io/images'
+	jbakeContentLoc = 'C:/dev/forest-azuaron-jbake/src/jbake/content'
+	outputType = 'markdown'
+	replacementUrl = 'http://azuaron.github.io/'
+	baseUrls = ['http://forestazuarondotcom.files.wordpress.com/','http://www.forestazuaron.com/','http://forestazuaron.com/']
+	cannedWpShortTags = ['caption']
+	customWpShortTags = [test:'<div>thing</div>']
+	verbose = true
+}
