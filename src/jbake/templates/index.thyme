@@ -1,27 +1,37 @@
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 	<head th:replace="header.thyme::head"/>
 	<body onload="prettyPrint()">
-	<div id="wrap">
-		<div th:replace="menu.thyme::menu"/>
-		<div class="container">
-			<div class="page-header">
-				<h1>Blog</h1>
+	<div id="overallbg"><!-- The title bar -->
+		<div class="front">
+			<div id="title">
+				<img src='<?php bloginfo('template_directory'); ?>/images/10/gears.png' alt='Decorative gears' />
+				<p id="tagline">Some tagline</p>
+				<a id="newprojects" href="contact/quote/">&nbsp;<!--Accepting new projects!--></a>
+				<div id="notanewprojects">&nbsp;<!--Not accepting new projects!--></div>
 			</div>
-			
-			<div th:each="post : ${published_posts}">
-				<a th:href='${post.uri}' href='href'><h1 th:text='${post.title}'>title</h1></a>
-				<p th:text='${#dates.format(post.date,"dd MMMM yyyy")}'>date</p>
-				<p th:utext='${post.body}'>body</p>
+		</div>
+		<div id="main">
+			<div id="content">
+				<h1 id="titleh">Project News</h1>
+				<div id="news">
+					<div class="post" th:each="post : ${published_posts}">
+						<a th:href='${post.uri}' href='href'><h2 th:text='${post.title}'>title</h2></a>
+						<div class="newcontent">
+							<p class="authordate" th:text='${#dates.format(post.date,"dd MMMM yyyy")}'>date</p>
+							<p th:utext='${post.body}'>body</p>
+						</div>
+					</div>
+					<div id="posts_navigation">
+						<p>Older posts are available in the <a th:href='${content.rootpath+config.archive_file}' href='href'>archive</a>.</p>
+					</div><!--End of posts_navigation-->
+				</div>
+				<div class='clear'> </div>
 			</div>
-				
-			<hr />
-			
-			<p>Older posts are available in the <a th:href='${content.rootpath+config.archive_file}' href='href'>archive</a>.</p>
+			<div id='rightBorder'> </div>
 		</div>
 	</div>
-	
 	<div th:replace="footer.thyme::footer"></div>
+	<div th:replace="menu.thyme::menu"/>
     </body>
 </html>

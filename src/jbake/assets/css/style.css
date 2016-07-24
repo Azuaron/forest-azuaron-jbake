@@ -1,0 +1,239 @@
+/*
+Theme Name: Az Des
+Theme URI: http://www.azuarondesign.com/
+Description: Theme for Azuaron Functional Design
+Author: Sam Brougher
+Author URI: http://www.azuarondesign.com/about/#sam
+Version: 1.0
+
+Legal: Built from scratch, not distributed. Copyright 2010 Azuaron Design.
+
+*, @font-face, html, body, h1, h2, h3, h4, h5, h6, p, address, blockquote, pre, ul, 
+ol, li, dl, dt, dd, table, caption, tr, th, td, form, fieldset, legend, label, 
+input, textarea, div, img, a, strong, em, abbr, q, cite, code, kbd, var, span, #id, 
+.class
+*/
+*{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+@font-face{font-family: "Orbitron"; src: url("http://www.azuarondesign.com/wp-content/themes/azdes/fonts/10/Orbitron/EOT/orbitron-black.eot"); src: local("Orbitron"), url("http://www.azuarondesign.com/wp-content/themes/azdes/fonts/10/Orbitron/OTF/orbitron-black.otf") format("opentype");}
+ol, ul{list-style:none;}
+a{padding:5px 0;}
+body{line-height:1.4; background-color:#000;}
+body, h2{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+a:link{color:#32556d;}
+a:visited{color:#1e3442;}
+a:hover{color:black;}
+a:active{color:black;}
+h1{font-size:50px;}
+h2{font-size:40px; padding:15px 0;}
+h3{font-family:Arial, sans-serif; font-size:20px;}
+p{padding-bottom:14px;}
+ul.list, ul.blogroll{margin:0 0 15px 15px; list-style:disc outside;}
+ul.list li{margin-bottom:15px;}
+ul.list ul{font-size:13px; list-style:square outside url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/listdash.gif');}
+ul.list ul li{margin-bottom:5px;}
+#content ol{list-style-type:decimal; margin:10px 10px 0 20px;}
+#content li{padding-bottom:10px;}
+.clear{clear:both;}
+#overallbg{/*position:relative; top:-200px;*/ margin:0; width:100%; height:100%;background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/bg.png') repeat top left;}
+/*Footer*/
+	#foot{width:100%; position:relative; margin-top:-25px; padding-top:30px; font-size:8px; font-family:Arial, sans-serif; color:#b4b4b4; z-index:30;}
+	#foottopbg{width:100%; position:absolute; top:-40px; height:69px; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/footertop.png') repeat-x top left;}
+	#foot p{margin-left:25px;}
+	#foot a{}
+	#foot a:link{color:#EEE;}
+	#foot a:visited{color:#DDD;}
+	#foot a:hover{color:#FFF;}
+	#foot a:active{color:#FFF;}
+	.sitemap{}
+		.sitemap li{font-size:12px; float:left; margin:0 25px 25px 25px;}
+		.sitemap ul{margin-left:15px;}
+			.sitemap ul li{float:none; font-size:10px; margin:0; list-style:square outside url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/listdash.gif');}
+		.sitemap a{text-decoration:none;}
+		.sitemap a:link{}
+		.sitemap a:visited{}
+		.sitemap a:hover{text-decoration:underline;}
+		.sitemap a:active{}
+	#latest{border:1px solid #b4b4b4; padding:10px 5px; float:left; width:200px; position:relative;}
+		#latest h4{position:absolute; top:-10px; margin-left:4px; font-size:12px; background-color:#000;}
+		#latest h5{font-size:11px;}
+		#latest p{margin:0;padding:0; font-size:9px;}#overallm{position:absolute; top:30px; left:30px; z-index:1;}
+	#menu{width:757px; height:63px; padding:0 0 0 110px; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/menubg.png') repeat-x top left;}
+		img#logo{position:absolute; top:-45px; left:-30px; z-index:3;}
+		li.menu-item{position:relative; display:inline; float:left; top:0px; font-size:24px; padding:8px 15px; font-family:Orbitron, Arial, sans-serif;}
+			li.menu-item a:link{text-decoration:none; color:black;}
+			li.menu-item a:visited{text-decoration:none; color:black;}
+			li.menu-item a:hover{text-decoration:underline; color:white;}
+			li.menu-item a:active{text-decoration:none; color:white;}
+			img.menuborder{position:absolute; top:0; left:0px;}
+			#latch{position:relative; overflow:visible; height:55px; top:-41px; width:0; margin-left:auto; margin-right:auto; z-index:2;}
+				img#downlatch{position:absolute; top:-11px; left:-6px;}
+				img#uplatch{position:absolute; bottom:-6px; top:auto; left:-6px;}
+		li#firstmenuitem{width:1px; margin:-60px; padding:0; overflow:visible;}
+		img#menurightborder{position:absolute; right:-15px; top:0;}
+	#mgear{position:absolute; top:-26px; right:-20px; height:98px; width:48px; z-index:-1;}
+		img#topgear, img#bottomgear{display:inline; float:left;}
+/*
+* Non-front title
+*/
+#title, #contactlink, #quotelink{left:0;}
+#title, .sideinfo, #rightBorder{position:absolute;}
+#main, #linkboxes, #content, #titleh, fieldset{position:relative;}
+/*
+*	The large title image/menu for the front page (and associated items)
+*/
+.front #title, .front p#tagline, .front a#newprojects, .front #notanewprojects{position:absolute !important;}
+.front #title{z-index:0 !important; left:0 !important; height:579px !important;}
+	.front #title img{position:relative !important; top:0 !important;}
+	.front p#tagline{top:130px; left:250px; width:400px; font-size:20px; text-align:center; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+	.front #notanewprojects, .front a#newprojects{left:-40px; top:160px; width:260px; height: 270px;}
+	.front a#newprojects{background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/newprojects.png') no-repeat top left; background-position:0px 0px;}
+	.front #notanewprojects{background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/notanewprojects.png') no-repeat top left;}
+	.front a#newprojects:hover{background-position:-260px 0px;}
+/*
+*	Main content area for the front page
+*	Contains link boxes
+*/
+.front #main, .front #linkboxes{position:relative !important;}
+.front #linkboxes{padding-left:6px !important;}
+.front .linkbox{margin-left:45px !important;}
+.front #main{top:-25px !important; margin-top:579px !important;}
+	.front #linkboxes{top:-25px !important; width:880px !important; overflow:hidden !important; z-index:1 !important;}
+		/* The below uses CSS3 border-radius and box-shadow */
+		.front .linkbox{width:235px; height:245px; margin-bottom:5px; float:left; display:inline; border:1px solid black; line-height:1.2; background-color:#f2f2f2; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow: 5px 5px 0px #779ead; -webkit-box-shadow: 5px 5px 0px #779ead; box-shadow: 5px 5px 0px #779ead;}
+			/* The below uses CSS3 border-radius */
+			.front .linkbox h3{width:215px; padding:3px 10px; font-size:24px; color:white; background-color:#1f3443; -moz-border-radius-topright:5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft:5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; border-top-left-radius: 5px;}
+			.front .linkbox ul li{padding:5px 10px; font-size:16px;}
+	.front #rightBorder{position:absolute !important;}
+/*
+*	The large title image
+*/
+#title{z-index:-1; top:0; height:200px; width:100%; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/bg.png') repeat top left;}
+	#title img{position:absolute; top:-354px;}
+/*
+*	Main content area
+*/
+#main{width:897px;}
+#content{margin-left:45px;}
+#main{margin-top:200px; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/contentbg.png') repeat top left;}
+	#content{width:788px; top:-40px; background-color:#f2f2f2; margin-bottom:15px; padding:0 10px 10px; border:1px solid #000; -moz-box-shadow: 5px 5px 5px #779ead; -webkit-box-shadow: 5px 5px 5px #779ead; box-shadow: 5px 5px 5px #779ead; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px;}
+		h1#titleh{width:788px; left:-10px; margin-bottom:10px; padding:0 10px; z-index:1; color:#FFF; background-color:#1f3443; -moz-border-radius-topright:15px; -webkit-border-top-right-radius:15px; -moz-border-radius-topleft:15px; -webkit-border-top-left-radius:15px; border-top-right-radius:15px; border-top-left-radius:15px;}
+	#rightBorder{right:-21px; top:0; width:26px; height:100%; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/rightborder.png') repeat-y top left;}
+	p.error{margin-top:10px; color:#df0000; background-color:white;}
+form, fieldset, label, input, .checkbox, textarea, select, option{}
+fieldset {margin:14px 0; padding:14px; border:1px solid #999;}
+legend{font-weight:bold; margin:0 7px 7px 0; padding:3px 7px;}
+input[type="text"], textarea, select{border:1px solid #666; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+option{float:none; clear: both; margin-right:28px;}
+input.radio, input.checkbox {margin-right: 7px;}
+/*Padding for text inputs and selects*/
+input[type="text"], input.button, textarea, select{padding:3px;}
+input.button{margin-right:1em; padding:3px 8px;}
+input[type="submit"], input[type="submit"]:focus{border:3px outset black; font-size:20px;}
+input[type="submit"]:hover{border:3px ridge #26343F;}
+input[type="submit"]:active{border:3px inset black;}
+.disabled{color: #999; background:#e7e7e7;}
+textarea, input{margin:5px 0 10px 0;}
+label:hover textarea, label:hover input, label:focus textarea, label:focus input,
+textarea:hover, input:hover, textarea:focus, input:focus, select:focus{background-color:#FFF; border:1px solid #444; border-right:1px solid #aaa; border-bottom:1px solid #aaa;}
+label:hover textarea:focus, label:hover input:focus, textarea:focus, input:focus{}
+label.tofocus{display:block; line-height:1; padding:0 5px;}
+label.focused{background-color:green; border:1px dashed lightgreen; color:white;}
+label.needed{background-color:red; border:1px dashed lightgreen; color:black;}
+fieldset{float:left; width:65%;}
+fieldset#submit{border:none; padding:0; margin:0;}
+.sideinfo{width:200px; top:140px; right:20px; padding:5px; border:1px solid #000; background-color:#a0bbc7;}ul#staff img{float:left; margin:0 10px 10px 0;}
+ul#staff h3{text-align:center;}div#tabmenu{position:absolute; top:70px; left:0px; width:806px; height:63px; margin:auto; padding:0; background:transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/tabmenubg.png') repeat-x top left;}
+	li.tabmenuitem{position:relative; display:inline; float:left; top:0px; padding:2px 15px; font-size:18px; font-family:Orbitron, Arial, sans-serif;}
+		li.tabmenuitem a:link{text-decoration:none; color:black;}
+		li.tabmenuitem a:visited{text-decoration:none; color:black;}
+		li.tabmenuitem a:hover{text-decoration:underline; color:white;}
+		li.tabmenuitem a:active{text-decoration:none; color:white;}
+		img.tabmenuborder{position:absolute; top:0; left:0px;}
+	img#tabmenurightborder{position:absolute; right:-2px; top:0;}
+	img#tabmenuleftborder{position:absolute; left:0px; top:0;}/* Common calls */
+h2.accordianhead, .accordiantab, .accordiancontent, .accordiandownup img{position:relative;}
+h2.accordianhead img, .accordiandownup{position:absolute;}
+h2.accordianhead, h2.accordianhead a:hover{color:#1f3443;}
+.accordiantab, .accordiancontent, .accordiandownup img{margin:auto;}
+#accordian{margin:50px auto; width:650px;}
+		h2.accordianhead{z-index:1; height:58px; padding:5px; margin:10px 0; text-align:center; border:1px solid black; background-color:white;}
+			h2.accordianhead img{z-index:2; bottom:-6px; right:-6px;}
+		.accordiantab{padding:20px 15px 30px 15px; overflow:hidden; bottom:20px; width:560px; border:1px solid black; -moz-box-shadow: 4px 4px 4px #8b8b8b; -webkit-box-shadow: 4px 4px 4px #8b8b8b; box-shadow: 4px 4px 4px #8b8b8b;}
+			.accordiancontent{bottom:0;}
+			.accordiandownup{cursor:pointer; width:100%; height:27px; left:0; bottom:0; background-color:white; border-top:1px solid #999;}
+				.accordiandownup img{left:283px; bottom:-2px;}#news{width:70%;}
+	.post{padding:0 10px 5px 10px; margin-bottom:10px; background-color:white; border:1px #799FAE solid; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px;}
+	.post h2{padding:0; margin:0;}
+	.newscontent{}
+		p.sitelink{font-size:12px; padding:0 0 10px 25px; margin-top:-8px;}
+		p.authordate{font-size:12px; margin:0 0 10px 25px;}
+#projectsbar{position:absolute; top:87px; right:10px; width:25%;}
+	#projectsbar h3{}
+	#projectsbar ul{}
+	#projectsbar li{}.portrow{width:786px; margin:0 1px 0 1px; overflow:hidden; clear:both;}
+	.portitem{padding:9px; float:left; width:244px; height:100%; display:inline; overflow:hidden;}
+		.portitem h3{height:27px; width:100%; overflow:hidden;}
+		.innerportitem{position:relative;}
+			.innerportitem img{margin-bottom:10px; border:solid 1px #525252;}
+			p.portdescr{font-size:12px; padding-bottom:3px;}
+			p.portdesby{padding:0; margin:0; width:100%; position:absolute; top:162px; left:0; background-color:#525252; font-size:9px; color:#f2f2f2;}
+h2#portih{padding:10px 0 0 0; text-align:center;}
+#portiitem{position:relative; width:767px;}
+	#portipic{}
+		img#portii{border:solid 1px #525252;}
+		p#portidesby{padding:0; margin:0; position:relative; top:-5px; background-color:#525252; font-size:9px; color:#f2f2f2;}
+	p.portidescr{font-size:13px; padding-bottom:5px;}
+	p.portidesby{background-color:#525252; color:#F2F2F2; font-size:9px; margin:0; padding:0; position:relative; top:-5px;}
+	p.hidden{display:none;}#resume{font-size:11px; overflow:hidden; width:610px; padding-right:178px; position:relative;}
+	/*Resume*/
+	#nameaddr{position:absolute; width:183px; right:0; font-size:11px;}
+		#nameaddr h3{}
+		#nameaddr p{}
+	#objective{}
+		#objective h3{}
+		#objective p{}
+	#qual{}
+		#qual h3{}
+		#qual ul{}
+			#qual li{}
+	#technical{}
+		#technical h3{}
+		#technical ul{}
+			#technical li{}
+	#degrees{}
+		#degrees h3{}
+		#degrees p{}
+	#work{}
+		#work h3{}
+		#work h4{}
+		#work h5{}
+		#work p{}
+		#work ul{}
+			#work li{}
+		.company{width:45%; float:left; padding-left:2%;}
+	#courses{}
+		#courses h3{}
+		#courses ul{}
+			#courses li{}
+	#activities{}
+		#activities h3{}
+		#activities ul{}
+		#activities li{}
+	#published{}
+		#published h3{}
+		#published ul{}
+			#published li{text-indent:-10px; padding-left:10px;}
+	#awards{}
+		#awards h3{}
+		#awards ul{}
+			#awards li{}
+	.resumebox{font-size:18px; width:190px; float:left; padding:0 5px 1015px 5px; margin:0 0 -1000px 0;}
+		.resumebox h3{text-align:center; font-size:100%;}
+		.resumebox h4{text-align:center; font-size:63%;}
+		.resumebox h5{font-size:55%; padding-left:5px;}
+		.resumebox ul{padding-left:15px; list-style:square outside url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/listdashblack.gif');}
+			.resumebox li{font-size:50%;}
+		.resumebox p{padding-left:8px; font-size:60%;}
+	.space{padding-bottom:12px;}
+	.oddbox{background-color:#d3d3d3;}
+	.evenbox{background-color:#FFF;}

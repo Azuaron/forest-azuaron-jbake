@@ -2,22 +2,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 	<body>
-		<div th:fragment="footer">
-			<div id="push"></div>
+		<div id="foot" th:fragment="footer">
+			<div id="foottopbg"></div>
     
 		    <div id="footer">
 		      <div class="container">
-		        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake <span th:text='${version}'>version</span></a></p>
+		        <p class="muted credit">&copy; 2010- by Azuaron Design unless otherwise specified. |
+				Gears made from brushes by <a href='http://www.obsidiandawn.com'>Obsidian Dawn</a>. |
+				Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> |
+				Baked with <a href="http://jbake.org">JBake <span th:text='${version}'>version</span></a> |
+				Also used (and recommended) is <a href='http://jquery.com/'>jQuery</a>. |
+				Text areas use James Padolsey's <a href='http://james.padolsey.com/javascript/jquery-plugin-autoresize/'>auto resize jQuery plugin</a>.
+				</p>
 		      </div>
 		    </div>
 	    
-		    <!-- Le javascript
-		    ================================================== -->
-		    <!-- Placed at the end of the document so the pages load faster -->
+		    <!-- Javascript
+		    ==================================================
+		    Placed at the end of the document so the pages load faster -->
 		    <script th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'js/jquery-1.11.1.min.js'"></script>
 		    <script th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'js/bootstrap.min.js'"></script>
 		    <script th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'js/prettify.js'"></script>
-    
+			<script th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'js/portfolio.js'"></script>
     	</div>
   	</body>
 </html>

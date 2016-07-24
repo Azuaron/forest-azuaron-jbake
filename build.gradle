@@ -24,8 +24,3 @@ task publish(type: GradleBuild) {
   tasks = ['publishGhPages']
   startParameter.projectProperties = project.getGradle().getStartParameter().getProjectProperties()
 }
-
-task wp2jbake(type: GradleBuild) {
-  buildFile = 'wp2jbake.gradle'
-  tasks = ['wp2jbake']
-}
