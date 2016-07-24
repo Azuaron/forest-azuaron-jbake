@@ -5,7 +5,7 @@
 	<div id="overallbg"><!-- The title bar -->
 		<div class="front">
 			<div id="title">
-				<img src='<?php bloginfo('template_directory'); ?>/images/10/gears.png' alt='Decorative gears' />
+				<img th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/gears.png'" alt='Decorative gears' />
 				<p id="tagline">Some tagline</p>
 				<a id="newprojects" href="contact/quote/">&nbsp;<!--Accepting new projects!--></a>
 				<div id="notanewprojects">&nbsp;<!--Not accepting new projects!--></div>

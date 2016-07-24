@@ -12,11 +12,11 @@
 				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'about.html'">About</a></li>
 				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+${config.feed_file}">Subscribe</a></li>
 			</ul>
-			<img id='menurightborder' src='<?php bloginfo('template_directory'); ?>/images/menuright.png' alt='Menu right border' />
+			<img id='menurightborder' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/menuright.png'" alt='Menu right border' />
 		</div><!-- end of menu -->
 		<div id="mgear">
-			<img id='topgear' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" thsrc="${rootpath} + 'images/smallwheel.png'" alt='Small gear wheel' />
-			<img id='bottomgear' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" thsrc="${rootpath} + 'images/smallwheel.png'" alt='Small gear wheel' />
+			<img id='topgear' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/smallwheel.png'" alt='Small gear wheel' />
+			<img id='bottomgear' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/smallwheel.png'" alt='Small gear wheel' />
 		</div>
 	</div><!-- end of overallm -->
   	</body>
