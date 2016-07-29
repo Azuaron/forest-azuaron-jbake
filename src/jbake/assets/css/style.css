@@ -1,9 +1,9 @@
 /*
 Theme Name: Az Des
-Theme URI: http://www.azuarondesign.com/
+Theme URI: http://www.forestazuaron.com/
 Description: Theme for Azuaron Functional Design
 Author: Sam Brougher
-Author URI: http://www.azuarondesign.com/about/#sam
+Author URI: http://www.forestazuaron.com/about
 Version: 1.0
 
 Legal: Built from scratch, not distributed. Copyright 2010 Azuaron Design.
@@ -34,11 +34,11 @@ ul.list ul li{margin-bottom:5px;}
 #content ol{list-style-type:decimal; margin:10px 10px 0 20px;}
 #content li{padding-bottom:10px;}
 .clear{clear:both;}
-#overallbg{/*position:relative; top:-200px;*/ margin:0; width:100%; height:100%;background:transparent url('../images/bg.png') repeat top left;}
+#overallbg{/*position:relative; top:-200px;*/ margin:0; width:100%; background:transparent url('../images/bg.png') repeat top left;}
 /*Footer*/
-	#foot{width:100%; position:relative; margin-top:-25px; padding-top:30px; font-size:8px; font-family:Arial, sans-serif; color:#b4b4b4; z-index:30;}
-	#foottopbg{width:100%; position:absolute; top:-40px; height:69px; background:transparent url('../images/footertop.png') repeat-x top left;}
-	#foot p{margin-left:25px;}
+	#foot{width:100%; position:relative; margin-top:-40px; padding-top:30px; font-size:8px; font-family:Arial, sans-serif; color:#b4b4b4; z-index:30;}
+	#foottopbg{width:100%; position:absolute; top:-39px; height:69px; background:transparent url('../images/footertop.png') repeat-x top left;}
+	#foot p{margin-left:25px; margin-top:55px}
 	#foot a{}
 	#foot a:link{color:#EEE;}
 	#foot a:visited{color:#DDD;}
@@ -115,8 +115,8 @@ ul.list ul li{margin-bottom:5px;}
 #main{width:897px;}
 #content{margin-left:45px;}
 #main{margin-top:200px; background:transparent url('../images/contentbg.png') repeat top left;}
-	#content{width:788px; top:-40px; background-color:#f2f2f2; margin-bottom:15px; padding:0 10px 10px; border:1px solid #000; -moz-box-shadow: 5px 5px 5px #779ead; -webkit-box-shadow: 5px 5px 5px #779ead; box-shadow: 5px 5px 5px #779ead; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px;}
-		h1#titleh{width:788px; left:-10px; margin-bottom:10px; padding:0 10px; z-index:1; color:#FFF; background-color:#1f3443; -moz-border-radius-topright:15px; -webkit-border-top-right-radius:15px; -moz-border-radius-topleft:15px; -webkit-border-top-left-radius:15px; border-top-right-radius:15px; border-top-left-radius:15px;}
+	#content{width:788px; top:-40px; background-color:#f2f2f2; margin-bottom:15px; padding:0 10px 10px; border:1px solid #000; -moz-box-shadow: 5px 5px 5px #779ead; -webkit-box-shadow: 5px 5px 5px #779ead; box-shadow: 5px 5px 5px #779ead; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; overflow:hidden;}
+		h1#titleh{width:788px; left:-10px; margin-top:-1px; margin-bottom:10px; padding:0 10px; z-index:1; color:#FFF; background-color:#1f3443;}
 	#rightBorder{right:-21px; top:0; width:26px; height:100%; background:transparent url('../images/rightborder.png') repeat-y top left;}
 	p.error{margin-top:10px; color:#df0000; background-color:white;}
 form, fieldset, label, input, .checkbox, textarea, select, option{}

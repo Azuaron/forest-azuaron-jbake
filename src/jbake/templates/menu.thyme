@@ -8,15 +8,17 @@
 				<img id='logo' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/logo.png'" alt='Forest Azuaron' />
 			</a>
 			<ul class="nav navbar-nav">
-				<li>
+				<li class="menu-item">
 					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'index.html'">Home</a>
-					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
 				</li>
-				<li>
+				<li class="menu-item">
 					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'about.html'">About</a>
 					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
 				</li>
-				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+${config.feed_file}">Subscribe</a></li>
+				<li class="menu-item">
+					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+${config.feed_file}">Subscribe</a>
+					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
+				</li>
 			</ul>
 			<img id='menurightborder' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/menuright.png'" alt='Menu right border' />
 		</div><!-- end of menu -->
