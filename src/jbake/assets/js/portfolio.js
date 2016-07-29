@@ -8,8 +8,8 @@ function setup_menu()
 	{
 		$('#menu > ul').prepend("<li class='menu-item page_item' id='firstmenuitem'>" +
 				'<div id="latch">' +
-					"<img id='downlatch' src='http://www.azuarondesign.com/wp-content/themes/azdes/images/10/downlatch.png' alt='Top clamp (you are here)' />" +
-					"<img id='uplatch' src='http://www.azuarondesign.com/wp-content/themes/azdes/images/10/uplatch.png' alt='Bottom clamp (you are here)' />" +
+					"<img id='downlatch' src='../images/downlatch.png' alt='Top clamp (you are here)' />" +
+					"<img id='uplatch' src='../images/uplatch.png' alt='Bottom clamp (you are here)' />" +
 				"</div>" +
 			"</li>");
 	}
@@ -256,7 +256,7 @@ function swap_images(portitem)
 function add_downup(accordian)
 {
 	accordian.find('.accordiantab').append('<div class="accordiandownup">' +
-			"<img src='http://www.azuarondesign.com/wp-content/themes/azdes/images/10/upchevrons.png' alt='Click to contract (up chevrons)' />" +
+			"<img src='../images/upchevrons.png' alt='Click to contract (up chevrons)' />" +
 		'</div>');
 }
 
@@ -269,7 +269,7 @@ function close_tabs(accordian)
 {
 	accordian.find('.accordiancontent').slideUp('slow');
 	accordian.find('.accordiancontent').removeClass('open_content');
-	accordian.find('.accordiandownup').children('img').attr('src', "http://www.azuarondesign.com/wp-content/themes/azdes/images/10/downchevrons.png");
+	accordian.find('.accordiandownup').children('img').attr('src', "../images/downchevrons.png");
 }
 
 function close_tab(content)
@@ -277,7 +277,7 @@ function close_tab(content)
 	content.slideUp('slow');
 	scroll_to(content.parent().parent().parent().find('h2.accordianhead > a').first().attr('name'));
 	content.removeClass('open_content');
-	content.siblings('.accordiandownup').children('img').attr('src', "http://www.azuarondesign.com/wp-content/themes/azdes/images/10/downchevrons.png");
+	content.siblings('.accordiandownup').children('img').attr('src', "../images/downchevrons.png");
 }
 
 function open_tab(content)
@@ -304,7 +304,7 @@ function open_tab(content)
 	}
 	$('html').animate({scrollTop: offset},'500');
 	content.addClass('open_content');
-	content.siblings('.accordiandownup').children('img').attr('src', "http://www.azuarondesign.com/wp-content/themes/azdes/images/10/upchevrons.png");
+	content.siblings('.accordiandownup').children('img').attr('src', "../images/upchevrons.png");
 }
 /*
 * jQuery document start function
@@ -394,7 +394,7 @@ $(document).ready(function()
 		top:'0',
 		left:'0',
 		display:'none',
-		background:"transparent url('http://www.azuarondesign.com/wp-content/themes/azdes/images/10/screen.png') repeat top left"
+		background:"transparent url('../images/screen.png') repeat top left"
 	});
 	$('body').append('<div id="window">' +
 						'<h2 id="portih"></h2>' +
@@ -407,7 +407,7 @@ $(document).ready(function()
 						'<p class="portidescr"></p>' +
 						'<p class="portidescr"></p>' +
 						'</div>' +
-						'<img id="portix" src="http://www.azuarondesign.com/wp-content/themes/azdes/images/10/x.gif" alt="Close window" />' +
+						'<img id="portix" src="../images/x.gif" alt="Close window" />' +
 						'</div>');
 	$('#portix').css({
 		position:'absolute',

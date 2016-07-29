@@ -8,8 +8,14 @@
 				<img id='logo' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/logo.png'" alt='Forest Azuaron' />
 			</a>
 			<ul class="nav navbar-nav">
-				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'index.html'">Home</a></li>
-				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'about.html'">About</a></li>
+				<li>
+					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'index.html'">Home</a>
+					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
+				</li>
+				<li>
+					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'about.html'">About</a>
+					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
+				</li>
 				<li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+${config.feed_file}">Subscribe</a></li>
 			</ul>
 			<img id='menurightborder' th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/menuright.png'" alt='Menu right border' />
