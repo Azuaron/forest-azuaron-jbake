@@ -9,8 +9,8 @@
 		<div id="main">
 			<div id="content">
 				<h1 id="titleh" th:text='${content.title}'>title</h1>
-				<p><em th:text='${#dates.format(content.date,"dd MMMM yyyy")}'>date</em></p>
 				<p th:utext='${content.body}'>body</p>
+				<p>Last updated <em th:text='${#dates.format(content.date,"dd MMMM yyyy")}'>date</em></p>
 				<div class='clear'> </div>
 			</div>
 			<div id='rightBorder'> </div>

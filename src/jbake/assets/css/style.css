@@ -82,14 +82,16 @@ ul.list ul li{margin-bottom:5px;}
 /*
 *	The large title image/menu for the front page (and associated items)
 */
-.front #title, .front p#tagline, .front a#newprojects, .front #notanewprojects{position:absolute !important;}
+.front #title, .front p#tagline, .front a#newprojects, .front #notanewprojects, .front #viewprojects{position:absolute !important;}
 .front #title{z-index:0 !important; left:0 !important; height:579px !important;}
 	.front #title img{position:relative !important; top:0 !important;}
 	.front p#tagline{top:130px; left:250px; width:400px; font-size:20px; text-align:center; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
-	.front #notanewprojects, .front a#newprojects{left:-40px; top:160px; width:260px; height: 270px;}
+	.front #notanewprojects, .front a#newprojects, .front a#viewprojects{left:-40px; top:160px; width:260px; height: 270px;}
 	.front a#newprojects{background:transparent url('../images/newprojects.png') no-repeat top left; background-position:0px 0px;}
+	.front a#viewprojects{background:transparent url('../images/ProjectsGearSprites.png') no-repeat top left; background-position:-16px -6px;}
 	.front #notanewprojects{background:transparent url('../images/notanewprojects.png') no-repeat top left;}
 	.front a#newprojects:hover{background-position:-260px 0px;}
+	.front a#viewprojects:hover{background-position:-285px -4px;}
 /*
 *	Main content area for the front page
 *	Contains link boxes
