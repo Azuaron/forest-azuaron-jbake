@@ -37,7 +37,8 @@ ul.list ul li{margin-bottom:5px;}
 #overallbg{/*position:relative; top:-200px;*/ margin:0; width:100%; background:transparent url('../images/bg.png') repeat top left;}
 /*Footer*/
 	#foot{width:100%; position:relative; margin-top:-40px; padding-top:30px; font-size:8px; font-family:Arial, sans-serif; color:#b4b4b4; z-index:30;}
-	#foottopbg{width:100%; position:absolute; top:-39px; height:69px; background:transparent url('../images/footertop.png') repeat-x top left;}
+	#foottopbg{width:100%; position:absolute; top:-19px; height:69px; background:transparent url('../images/footertop.png') repeat-x top left;}
+	.frontbg #foottopbg{top:-29px}
 	#foot p{margin-left:25px; margin-top:55px}
 	#foot a{}
 	#foot a:link{color:#EEE;}

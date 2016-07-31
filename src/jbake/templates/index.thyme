@@ -2,31 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 	<head th:replace="header.thyme::head"/>
 	<body onload="prettyPrint()">
-	<div id="overallbg"><!-- The title bar -->
+	<div id="overallbg" class="frontbg"><!-- The title bar -->
 		<div class="front">
 			<div id="title">
 				<img th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/gears.png'" alt='Decorative gears' />
-				<p id="tagline">Some tagline</p>
+				<p id="tagline">The wandering mind of a programmer and author.</p>
 				<a id="newprojects" href="contact/quote/">&nbsp;<!--Accepting new projects!--></a>
 				<div id="notanewprojects">&nbsp;<!--Not accepting new projects!--></div>
 			</div>
 			<div id="main">
-				<div id="content">
-					<h1 id="titleh">Project News</h1>
-					<div id="news">
-						<div class="post" th:each="post : ${published_posts}">
-							<a th:href='${post.uri}' href='href'><h2 th:text='${post.title}'>title</h2></a>
-							<div class="newcontent">
-								<p class="authordate" th:text='${#dates.format(post.date,"dd MMMM yyyy")}'>date</p>
-								<p th:utext='${post.body}'>body</p>
-							</div>
-						</div>
-						<div id="posts_navigation">
-							<p>Older posts are available in the <a th:href='${content.rootpath+config.archive_file}' href='href'>archive</a>.</p>
-						</div><!--End of posts_navigation-->
-					</div>
-					<div class='clear'> </div>
-				</div>
 				<div id='rightBorder'> </div>
 			</div>
 		</div>

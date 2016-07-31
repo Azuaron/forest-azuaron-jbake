@@ -4,7 +4,7 @@
 	<body>
 		<div id="foot" th:fragment="footer">
 			<div id="foottopbg">
-				<p class="muted credit">&copy; 2010- by Azuaron Design unless otherwise specified. |
+				<p class="muted credit">&copy; 2010- by Sam Brougher unless otherwise specified. |
 				Gears made from brushes by <a href='http://www.obsidiandawn.com'>Obsidian Dawn</a>. |
 				Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> |
 				Baked with <a href="http://jbake.org">JBake <span th:text='${version}'>version</span></a> |
