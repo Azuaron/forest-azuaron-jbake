@@ -8,7 +8,7 @@
 				<img th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + 'images/gears.png'" alt='Decorative gears' />
 				<p id="tagline">The wandering mind of a programmer and author.</p>
 				<!--a id="newprojects" href="contact/quote/">&nbsp;< Accepting new projects! ></a -->
-				<a id="viewprojects" href="contact/quote/">&nbsp;<!--Accepting new projects!--></a>
+				<a id="viewprojects" href="https://github.com/Azuaron">&nbsp;<!--Projects on GitHub!--></a>
 				<!--div id="notanewprojects">&nbsp;<! Not accepting new projects! ></div-->
 			</div>
 			<div id="main">

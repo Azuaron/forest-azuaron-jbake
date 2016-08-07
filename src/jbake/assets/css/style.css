@@ -144,7 +144,8 @@ label.focused{background-color:green; border:1px dashed lightgreen; color:white;
 label.needed{background-color:red; border:1px dashed lightgreen; color:black;}
 fieldset{float:left; width:65%;}
 fieldset#submit{border:none; padding:0; margin:0;}
-.sideinfo{width:200px; top:140px; right:20px; padding:5px; border:1px solid #000; background-color:#a0bbc7;}ul#staff img{float:left; margin:0 10px 10px 0;}
+.sideinfo{width:200px; top:140px; right:20px; padding:5px; border:1px solid #000; background-color:#a0bbc7;}
+ul#staff img{float:left; margin:0 10px 10px 0;}
 ul#staff h3{text-align:center;}div#tabmenu{position:absolute; top:70px; left:0px; width:806px; height:63px; margin:auto; padding:0; background:transparent url('../images/tabmenubg.png') repeat-x top left;}
 	li.tabmenuitem{position:relative; display:inline; float:left; top:0px; padding:2px 15px; font-size:18px; font-family:Orbitron, Arial, sans-serif;}
 		li.tabmenuitem a:link{text-decoration:none; color:black;}
