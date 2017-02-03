@@ -18,6 +18,6 @@ githubPages {
      	into '.'
      }
   }
-  commitMessage = 'Update design'
+  commitMessage = 'Short Fiction'
   targetBranch = 'master'
 }

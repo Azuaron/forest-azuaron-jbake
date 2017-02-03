@@ -20,7 +20,7 @@
 					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
 				</li>
 				<li class="menu-item">
-					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'novels.html'">Novels</a>
+					<a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'fiction.html'">Fiction</a>
 					<img class="menuborder" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:src="${rootpath} + '/images/menudivider.png'" />
 				</li>
 				<li class="menu-item">
