@@ -1,5 +1,5 @@
 title=Fiction
-date=2016-08-06
+date=2017-02-02
 type=page
 tags=novels,fantasy,fiction,short stories
 status=published

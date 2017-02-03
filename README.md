@@ -5,4 +5,4 @@ JBake code for Forest Azuaron (azuaron.github.io)
 ./gradlew jbake
 
 ## Upload to pages
-./gradlew 
+./gradlew publish
